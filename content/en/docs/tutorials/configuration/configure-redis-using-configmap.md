@@ -9,7 +9,7 @@ weight: 30
 
 <!-- overview -->
 
-Learn how to manage Redis configurations in a Kubernetes environment using ConfigMaps - a powerful technique for separating configuration from your contrainer images. 
+Learn how to manage Redis configurations in a Kubernetes environment using ConfigMaps - a powerful technique for separating configuration from your container images. 
 
 # Overview
 
@@ -17,7 +17,7 @@ This tutorial walks through using ConfigMaps to store Redis settings outside you
 
 * Create a ConfigMap with Redis configuration values
 * Create a Redis Pod that mounts and uses the created ConfigMap
-* Verify that the configuration was correctly applie
+* Verify that the configuration was correctly applied
 
 New to Kubernetes? Start with the [Kubernetes basics tutorial](https://kubernetes.io/docs/tutorials/kubernetes-basics/) before diving in. 
 
@@ -43,7 +43,7 @@ Follow the steps below to configure a Redis cache using data stored in a ConfigM
 
 ### Step 1: Create and apply a ConfigMap and Redis Pod
 
-First create a ConfigMap with an empty configuration block:
+First, create a ConfigMap with an empty configuration block:
 
 ```shell
 cat <<EOF >./example-redis-config.yaml
